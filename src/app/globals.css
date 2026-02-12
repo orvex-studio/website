@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme inline {
+    --font-sans: var(--font-figtree);
+    --font-heading: var(--font-sora);
+}
+
+@layer base {
+    body {
+        @apply font-sans;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply bg-white text-black hover:bg-gray-100 font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl text-sm;
+    }
+
+    .btn-secondary {
+        @apply bg-transparent text-white hover:bg-white/10 border border-white/20 hover:border-white/40 font-semibold py-2.5 px-6 rounded-lg transition-all duration-300 text-sm;
+    }
+
+    .gradient-orb {
+        @apply absolute rounded-full opacity-30 blur-3xl;
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
+
+@keyframes pulse-glow {
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animate-float {
+    animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 8s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+.animate-float-delayed-2 {
+    animation: float 8s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+.animate-pulse-glow {
+    animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-shimmer {
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+    background-size: 1000px 100%;
+    animation: shimmer 3s infinite;
+}
+
+.animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}
