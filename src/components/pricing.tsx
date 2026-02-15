@@ -38,7 +38,7 @@ const Pricing: React.FC = () => {
             Our Ventures
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Products, platforms, and ventures we've built that push boundaries
+            Products, platforms, and ventures we&apos;ve built that push boundaries
             and create value.
           </p>
         </div>

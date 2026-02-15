@@ -3,7 +3,6 @@ import { Inter, Sora, Figtree, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-
 import UnderConstruction from "@/components/under-construction";
 
 const inter = Inter({
@@ -143,10 +142,10 @@ export default function RootLayout({
             <body
                 className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} bg-black antialiased`}
             >
-                {/* <Navbar /> */}
-                {/* {children} */}
                 <UnderConstruction />
-                {/* <Footer /> */}
+                {/* <Navbar />
+                    {children}
+                    <Footer /> */}
             </body>
         </html>
     );

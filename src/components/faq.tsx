@@ -10,7 +10,7 @@ const FAQ = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-300">
-            Got questions? We've got answers. Here are the most common questions
+            Got questions? We&apos;ve got answers. Here are the most common questions
             we receive.
           </p>
         </div>

@@ -10,7 +10,7 @@ const Contact: FC = () => {
             Get in Touch
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Interested in partnering, investing, or exploring opportunities? Let's discuss how we can work together.
+            Interested in partnering, investing, or exploring opportunities? Let&apos;s discuss how we can work together.
           </p>
         </div>
 
