@@ -11,7 +11,7 @@ export default function Home() {
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "Organization",
-        name: "Orvex Services",
+        name: "Orvex Studios",
         url: "https://orvex.cc",
         logo: "https://orvex.cc/favicon.png",
         description:

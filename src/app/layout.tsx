@@ -26,7 +26,7 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-    title: "Orvex Services | Under Construction",
+    title: "Orvex Studios | Under Construction",
     description:
         "We are working on something amazing. Stay tuned for something incredible. We're working hard behind the scenes.",
     keywords: [
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
         "we are working on something amazing",
         "stay tuned for something incredible",
     ],
-    authors: [{ name: "Orvex Services", url: "https://orvex.cc" }],
-    creator: "Orvex Services",
-    publisher: "Orvex Services",
+    authors: [{ name: "Orvex Studios", url: "https://orvex.cc" }],
+    creator: "Orvex Studios",
+    publisher: "Orvex Studios",
     metadataBase: new URL("https://orvex.cc"),
     alternates: {
         canonical: "https://orvex.cc/",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
 };
 
 // export const metadata: Metadata = {
-//     title: "Orvex Services | Where Innovation Begins | Products, Platforms & Ventures",
+//     title: "Orvex Studios | Where Innovation Begins | Products, Platforms & Ventures",
 //     description:
-//         "Orvex Services is an umbrella company developing products, platforms, and ventures that push boundaries and bring new ideas to life. We build innovative technology solutions including DriftLabs and other cutting-edge products.",
+//         "Orvex Studios is an umbrella company developing products, platforms, and ventures that push boundaries and bring new ideas to life. We build innovative technology solutions including fluxo and other cutting-edge products.",
 //     keywords: [
 //         "umbrella company",
 //         "technology company",
@@ -64,43 +64,43 @@ export const metadata: Metadata = {
 //         "product innovation",
 //         "venture building",
 //         "technology solutions",
-//         "orvex Services",
+//         "Orvex Studios",
 //         "orvex",
-//         "driftlabs",
+//         "fluxo",
 //         "developer tools",
 //         "SaaS products",
 //         "technology platforms",
 //     ],
-//     authors: [{ name: "Orvex Services", url: "https://orvex.cc" }],
-//     creator: "Orvex Services",
-//     publisher: "Orvex Services",
+//     authors: [{ name: "Orvex Studios", url: "https://orvex.cc" }],
+//     creator: "Orvex Studios",
+//     publisher: "Orvex Studios",
 //     metadataBase: new URL("https://orvex.cc"),
 //     alternates: {
 //         canonical: "https://orvex.cc/",
 //     },
 //     openGraph: {
-//         title: "Orvex Services | Where Innovation Begins | Products, Platforms & Ventures",
+//         title: "Orvex Studios | Where Innovation Begins | Products, Platforms & Ventures",
 //         description:
-//             "Orvex Services is an umbrella company developing products, platforms, and ventures that push boundaries and bring new ideas to life. Known for DriftLabs and other innovative technology solutions.",
+//             "Orvex Studios is a development company making products, platforms, and ventures that push boundaries and bring new ideas to life. Known for fluxo and other innovative technology solutions.",
 //         url: "https://orvex.cc",
-//         siteName: "Orvex Services",
+//         siteName: "Orvex Studios",
 //         locale: "en_US",
 //         type: "website",
 //         images: [
 //             {
-//                 url: "/img/driftlabs.webp",
+//                 url: "/img/icon.png",
 //                 width: 1200,
 //                 height: 630,
-//                 alt: "Orvex Services - Where Innovation Begins",
+//                 alt: "Orvex Studios - Where Innovation Begins",
 //             },
 //         ],
 //     },
 //     twitter: {
 //         card: "summary_large_image",
-//         title: "Orvex Services | Where Innovation Begins | Products, Platforms & Ventures",
+//         title: "Orvex Studios | Where Innovation Begins | Products, Platforms & Ventures",
 //         description:
-//             "Umbrella company developing products, platforms, and ventures that push boundaries. Known for DriftLabs and other innovative technology solutions.",
-//         images: ["/img/driftlabs.webp"],
+//             "Development studio making products, platforms, and ventures that push boundaries and bring new ideas to life. Known for Fluxo and other innovative technology solutions.",
+//         images: ["/img/icon.png"],
 //         site: "@orvexcc",
 //         creator: "@orvexcc",
 //     },
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
 //         },
 //     },
 //     category: "Software Development",
-//     applicationName: "Orvex Services",
+//     applicationName: "Orvex Studios",
 //     generator: "Next.js",
 //     verification: {
 //         google: undefined,
@@ -142,10 +142,10 @@ export default function RootLayout({
             <body
                 className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} bg-black antialiased`}
             >
-                <UnderConstruction />
-                {/* <Navbar />
-                    {children}
-                    <Footer /> */}
+                {/* <UnderConstruction /> */}
+                <Navbar />
+                {children}
+                <Footer />
             </body>
         </html>
     );
