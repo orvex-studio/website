@@ -3,45 +3,46 @@ import { Inter, Sora, Figtree, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import UnderConstruction from "@/components/under-construction";
 
 const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
+    variable: "--font-inter",
+    subsets: ["latin"],
 });
 
 const sora = Sora({
-  variable: "--font-sora",
-  subsets: ["latin"],
+    variable: "--font-sora",
+    subsets: ["latin"],
 });
 
 const figtree = Figtree({
-  variable: "--font-figtree",
-  subsets: ["latin"],
+    variable: "--font-figtree",
+    subsets: ["latin"],
 });
 
 const josefin = Josefin_Sans({
-  variable: "--font-josefin",
-  subsets: ["latin"],
+    variable: "--font-josefin",
+    subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Orvex Services | Under Construction",
-  description:
-    "We are working on something amazing. Stay tuned for something incredible. We're working hard behind the scenes.",
-  keywords: [
-    "under construction",
-    "coming soon",
-    "work in progress",
-    "we are working on something amazing",
-    "stay tuned for something incredible",
-  ],
-  authors: [{ name: "Orvex Services", url: "https://orvex.cc" }],
-  creator: "Orvex Services",
-  publisher: "Orvex Services",
-  metadataBase: new URL("https://orvex.cc"),
-  alternates: {
-    canonical: "https://orvex.cc/",
-  },
+    title: "Orvex Services | Under Construction",
+    description:
+        "We are working on something amazing. Stay tuned for something incredible. We're working hard behind the scenes.",
+    keywords: [
+        "under construction",
+        "coming soon",
+        "work in progress",
+        "we are working on something amazing",
+        "stay tuned for something incredible",
+    ],
+    authors: [{ name: "Orvex Services", url: "https://orvex.cc" }],
+    creator: "Orvex Services",
+    publisher: "Orvex Services",
+    metadataBase: new URL("https://orvex.cc"),
+    alternates: {
+        canonical: "https://orvex.cc/",
+    },
 };
 
 // export const metadata: Metadata = {
@@ -132,19 +133,20 @@ export const metadata: Metadata = {
 // };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} bg-black antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body
+                className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} bg-black antialiased`}
+            >
+                <UnderConstruction />
+                {/* <Navbar />
+                    {children}
+                    <Footer /> */}
+            </body>
+        </html>
+    );
 }
