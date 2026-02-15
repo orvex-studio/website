@@ -9,7 +9,6 @@ import {
   Mail,
   MessageCircle,
   Globe,
-  CheckCircle,
 } from "lucide-react";
 
 export default function PrivacyPolicy() {
@@ -34,7 +33,7 @@ export default function PrivacyPolicy() {
             <section className="group">
               <div className="bg-white/5 rounded-xl p-6 border border-white/5">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Orvex Services ("we," "our," or "us") is committed to
+                  Orvex Services (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to
                   protecting your privacy. This Privacy Policy explains how we
                   collect, use, disclose, and safeguard your information when
                   you use our services, including our products, platforms, and
@@ -392,7 +391,7 @@ export default function PrivacyPolicy() {
                       <strong className="text-white">
                         Right to Erasure (Article 17):
                       </strong>{" "}
-                      Request deletion of your data ("right to be forgotten").
+                      Request deletion of your data (&quot;right to be forgotten&quot;).
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -617,7 +616,7 @@ export default function PrivacyPolicy() {
                 <div className="bg-linear-to-br from-red-500/20 to-red-600/20 w-10 h-10 rounded-xl flex items-center justify-center mr-4 border border-red-500/20">
                   <Lock size={20} className="text-red-400" />
                 </div>
-                10. Children's Privacy
+                10. Children&apos;s Privacy
               </h2>
               <div className="bg-white/5 rounded-xl p-6 border border-white/5">
                 <p className="text-gray-300 leading-relaxed">
@@ -722,7 +721,7 @@ export default function PrivacyPolicy() {
                 <p className="text-gray-300 leading-relaxed">
                   We may update this Privacy Policy from time to time. We will
                   notify you of any material changes by posting the new policy
-                  on this page and updating the "Last updated" date. For
+                  on this page and updating the &quot;Last updated&quot; date. For
                   significant changes, we may also notify you via email or
                   through our services. Your continued use of our services after
                   changes become effective constitutes acceptance of the updated

@@ -34,12 +34,12 @@ export default function TermsOfService() {
             <section className="group">
               <div className="bg-white/5 rounded-xl p-6 border border-white/5">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  These Terms of Service ("Terms") govern your use of Orvex
-                  Services' ("Orvex," "we," "our," or "us") services, including
+                  These Terms of Service (&quot;Terms&quot;) govern your use of Orvex
+                  Services&apos; (&quot;Orvex,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) services, including
                   our products, platforms, and ventures, including but not
                   limited to web development, mobile app development, enterprise
                   software solutions, cloud services, consulting, and related
-                  services (collectively, "Services"). By engaging with Orvex
+                  services (collectively, &quot;Services&quot;). By engaging with Orvex
                   Services or using our Services, you agree to be bound by these
                   Terms. Please read them carefully.
                 </p>
@@ -266,7 +266,7 @@ export default function TermsOfService() {
                 </div>
                 <div className="bg-white/5 rounded-xl p-6 border border-white/5">
                   <h3 className="font-semibold text-white mb-3">
-                    5.2 Orvex Services' Intellectual Property
+                    5.2 Orvex Services&apos; Intellectual Property
                   </h3>
                   <p className="text-gray-300 leading-relaxed mb-3">
                     Orvex Services retains all rights to:
@@ -362,7 +362,7 @@ export default function TermsOfService() {
                   </h3>
                   <p className="text-gray-300 leading-relaxed mb-3">
                     EXCEPT AS EXPRESSLY SET FORTH ABOVE, OUR SERVICES ARE
-                    PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF
+                    PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF
                     ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT
                     LIMITED TO:
                   </p>
