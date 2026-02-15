@@ -8,7 +8,7 @@ const Footer: FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="col-span-1 md:col-span-2">
                         <h3 className="text-2xl font-bold text-white mb-4">
-                            Orvex Services
+                            Orvex Studios
                         </h3>
                         <p className="text-gray-400 mb-6 max-w-md leading-relaxed text-sm">
                             We develop products, platforms, and ventures that
@@ -107,7 +107,7 @@ const Footer: FC = () => {
 
                 <div className="border-t border-white/10 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center">
                     <p className="text-gray-400 text-sm">
-                        © 2025 Orvex Services. All rights reserved.
+                        © 2025 Orvex Studios. All rights reserved.
                     </p>
                     <div className="flex space-x-6 mt-3 sm:mt-0">
                         <a
