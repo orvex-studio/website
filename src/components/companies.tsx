@@ -1,7 +1,8 @@
 "use client";
 
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Database } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Company = {
   name: string;
@@ -9,6 +10,7 @@ type Company = {
   category: string;
   url?: string;
   image?: string;
+  internalHref?: string;
 };
 
 const companies: Company[] = [
@@ -26,6 +28,12 @@ const companies: Company[] = [
     url: "https://monitor.orvex.cc",
     image: "/img/projects/monitor-vector.svg",
   },
+  {
+    name: "NuboDB",
+    description: "Local NoSQL document database for Node.js. Built for testing and development.",
+    category: "Developer Tools",
+    internalHref: "/nubodb",
+  },
 ];
 
 const Companies: React.FC = () => {
@@ -41,11 +49,8 @@ const Companies: React.FC = () => {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl">
             {companies.map((company, index) => {
-              return (
-                <div
-                  key={index}
-                  className="group bg-zinc-950 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all duration-300 hover:transform hover:scale-[1.02]"
-                >
+              const CardContent = (
+                <>
                   <div className="flex items-start justify-between mb-4">
                     {company.image ? (
                       <div className="w-10 h-10 p-1 rounded-lg overflow-hidden bg-white/5 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -58,15 +63,18 @@ const Companies: React.FC = () => {
                         />
                       </div>
                     ) : (
-                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform" />
+                      <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <Database size={24} className="text-blue-400" />
+                      </div>
                     )}
-                    {company.url && (
+                    {company.url && !company.internalHref && (
                       <a
                         href={company.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white/5 hover:bg-white/10 w-8 h-8 rounded-lg flex items-center justify-center transition-colors"
                         aria-label={`Visit ${company.name}`}
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <ExternalLink size={14} className="text-white/60" />
                       </a>
@@ -86,6 +94,27 @@ const Companies: React.FC = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {company.description}
                   </p>
+                </>
+              );
+
+              const cardClassName =
+                "group bg-zinc-950 border border-white/10 rounded-xl p-6 hover:border-white/30 transition-all duration-300 hover:transform hover:scale-[1.02]";
+
+              if (company.internalHref) {
+                return (
+                  <Link
+                    key={index}
+                    href={company.internalHref}
+                    className={cardClassName}
+                  >
+                    {CardContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <div key={index} className={cardClassName}>
+                  {CardContent}
                 </div>
               );
             })}
