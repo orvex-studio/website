@@ -6,6 +6,7 @@ import Contact from "@/components/contact";
 import Services from "@/components/services";
 import Employees from "@/components/employees";
 import Companies from "@/components/companies";
+import Footer from "@/components/footer";
 
 export default function Home() {
     const structuredData = {
@@ -50,6 +51,7 @@ export default function Home() {
                 <About />
                 <FAQ />
                 <Contact />
+                <Footer />
             </div>
         </>
     );

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Sora, Figtree, Josefin_Sans } from "next/font/google";
+import { Inter, Sora, Figtree, Josefin_Sans, Fredoka } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import UnderConstruction from "@/components/under-construction";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -25,6 +24,11 @@ const figtree = Figtree({
 
 const josefin = Josefin_Sans({
   variable: "--font-josefin",
+  subsets: ["latin"],
+});
+
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
   subsets: ["latin"],
 });
 
@@ -146,12 +150,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} bg-black antialiased`}
+        className={`${inter.variable} ${sora.variable} ${figtree.variable} ${josefin.variable} ${fredoka.variable} bg-black antialiased`}
       >
         {/* <UnderConstruction /> */}
         <Navbar />
         {children}
-        <Footer />
         <SpeedInsights />
         <Analytics />
       </body>

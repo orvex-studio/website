@@ -137,3 +137,13 @@
     background-size: 200% 200%;
     animation: gradient-shift 3s ease infinite;
 }
+
+/* NuboDB page - Figtree font for all text */
+.nubodb-figtree h1,
+.nubodb-figtree h2,
+.nubodb-figtree h3,
+.nubodb-figtree h4,
+.nubodb-figtree h5,
+.nubodb-figtree h6 {
+    font-family: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+}
